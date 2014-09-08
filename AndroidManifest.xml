@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--*Sign In Log of changes
+ * 
+ * =================================================================================================
+ * Programmer: Randy Richardson
+ * Date: 08/05/2014
+ * 
+ * Note of Changes:  I have added a permission to allow the app to save a text file using ExternalStorage.
+ *						This file will serve as a readable Log to track patterns of success or failure
+ *						in the app. 						
+ * =================================================================================================
+*/ -->
+
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.signin"
+    android:versionCode="131"
+    android:versionName="1.31" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="15" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    
+    <!-- Randy Richardson 08/05/2014 START -->
+    
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    
+    <!-- Randy Richardson 08/05/2014 END -->
+    
+<application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:screenOrientation="landscape" android:theme="@style/AppTheme">
+        <receiver android:name="com.example.signin.RepeatingAlarm" />
+
+        <activity android:name="com.example.signin.Main" android:label="@string/app_name">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter> /!
+            -->
+        </activity>
+        <activity android:name="com.example.signin.PersonalCode" android:label="@string/title_activity_personal_code">
+        </activity>
+        <activity android:name="com.example.signin.SignMeIn" android:label="@string/title_activity_sign_me_in">
+        </activity>
+        <activity android:name="com.example.test.Login" android:label="@string/title_activity_login">
+        </activity>
+        <activity android:name="com.example.signin.Welcome" android:label="@string/title_activity_welcome">
+        </activity>
+        <!-- This activity is the activity that will be launched by the alarm -->
+        <activity android:name="com.example.signin.RepeatingAlarm" />
+        <activity android:name="com.example.signin.StartActivity" android:label="@string/title_activity_start">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.signin.GuestLogin" android:label="@string/title_activity_guest_login">
+        </activity>
+        <activity android:name="com.example.signin.GuestInfo" android:label="@string/title_activity_guest_info">
+        </activity>
+        <activity android:name="com.example.signin.Confirm" android:label="@string/title_activity_confirm">
+        </activity>
+        <activity android:name="com.example.signin.AdminPanel" android:label="@string/title_activity_admin_panel" android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity android:name="com.example.signin.AdminViewLogged" android:label="@string/title_activity_admin_view_logged" android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity android:name="com.example.signin.Main_page" android:label="@string/title_activity_main_page" android:windowSoftInputMode="stateHidden"> >
+        </activity>
+    </application>
+    <!-- Internet Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>

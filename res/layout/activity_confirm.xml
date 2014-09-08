@@ -1,0 +1,210 @@
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Confirm" >
+    
+    <RelativeLayout
+        android:id="@+id/ConfirmFieldsLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="50dp" >
+        
+    <RelativeLayout
+        android:id="@+id/ConfirmFieldsCol1"
+        android:layout_width="225dp"
+        android:layout_height="match_parent" >
+		    
+        <TextView
+            android:id="@+id/confirm_namelbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="Visitor Name:"
+            android:textSize="25sp" />
+
+	    <TextView
+	        android:id="@+id/confirm_purposelbl"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_below="@+id/confirm_artistnamelbl"
+	        android:layout_marginTop="42dp"
+	        android:text="Purpose of Visit:" 
+            android:textSize="25sp" />
+
+	    <TextView
+	        android:id="@+id/confirm_addresslbl"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_below="@+id/confirm_namelbl"
+	        android:layout_marginTop="42dp"
+	        android:text="Visitor Address:"
+	        android:textSize="25sp" />
+
+	    <TextView
+	        android:id="@+id/confirm_artistnamelbl"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_below="@+id/confirm_addresslbl"
+	        android:layout_marginTop="42dp"
+	        android:text="Artist Name:"
+	        android:textSize="25sp" />
+	    
+	</RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ConfirmFieldsCol2"
+        android:layout_width="225dp"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/ConfirmFieldsCol1" >
+
+        <TextView
+            android:id="@+id/confirm_visName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/confirm_visAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/confirm_visName"
+            android:layout_marginTop="64dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/confirm_artName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/confirm_visAdd"
+            android:layout_marginTop="57dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/confirm_purp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/confirm_artName"
+            android:layout_marginTop="56dp"
+            android:text="TextView" />
+
+    </RelativeLayout>
+		
+		<RelativeLayout
+		    android:id="@+id/ConfirmFieldsCol3"
+		    android:layout_width="225dp"
+		    android:layout_height="match_parent"
+		    android:layout_toRightOf="@id/ConfirmFieldsCol2" >
+
+		     <TextView
+		         android:id="@+id/confirm_phonelbl"
+		         android:layout_width="wrap_content"
+		         android:layout_height="wrap_content"
+		         android:layout_alignParentLeft="true"
+		         android:layout_alignParentTop="true"
+		         android:text="Phone:" 
+           		 android:textSize="25sp" />
+
+		     <TextView
+		         android:id="@+id/confirm_snlbl"
+		         android:layout_width="wrap_content"
+		         android:layout_height="wrap_content"
+		         android:layout_alignParentLeft="true"
+		         android:layout_below="@+id/confirm_phonelbl"
+	       		 android:layout_marginTop="42dp"
+		         android:text="Studio Number:"
+           		 android:textSize="25sp" />
+
+		     <TextView
+		         android:id="@+id/confirm_emaillbl"
+		         android:layout_width="wrap_content"
+		         android:layout_height="wrap_content"
+		         android:layout_alignParentLeft="true"
+		         android:layout_below="@+id/confirm_snlbl"
+	       		 android:layout_marginTop="42dp"
+		         android:text="E-mail:" 
+           		 android:textSize="25sp" />
+		    
+		</RelativeLayout>	
+		
+		<RelativeLayout
+		    android:id="@+id/ConfirmFieldsCol4"
+		    android:layout_width="225dp"
+		    android:layout_height="match_parent"
+		    android:layout_toRightOf="@id/ConfirmFieldsCol3" >
+
+		    <TextView
+		        android:id="@+id/confirm_phone"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignParentTop="true"
+		        android:text="TextView" />
+
+		    <TextView
+		        android:id="@+id/confirm_email"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_below="@+id/confirm_phone"
+		        android:layout_marginTop="140dp"
+		        android:text="TextView" />
+
+		    <TextView
+		        android:id="@+id/confirm_studNum"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_below="@+id/confirm_phone"
+		        android:layout_marginTop="66dp"
+		        android:text="TextView" />
+	        
+		</RelativeLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/confirm_ActivityTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Entered Information"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ConfirmFieldsLayout"
+        android:layout_marginLeft="175dp"
+        android:layout_toRightOf="@+id/reEnter"
+        android:background="@drawable/custom_btn"
+        android:text="Confirm"
+        android:textSize="40sp" />
+
+    <Button
+        android:id="@+id/reEnter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ConfirmFieldsLayout"
+        android:layout_below="@+id/ConfirmFieldsLayout"
+        android:layout_marginLeft="81dp"
+        android:background="@drawable/custom_btn"
+        android:text="Re-Enter information"
+        android:textSize="40sp" />
+
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Studio Login</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_personal_code">PersonalCode</string>
+    <string name="title_activity_sign_me_in">SignMeIn</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_welcome">Welcome</string>
+    <string name="title_activity_start">Studio Login</string>
+    <string name="title_activity_guest_login">GuestLogin</string>
+    <string name="title_activity_guest_info">GuestInfo</string>
+    <string name="title_activity_confirm">Confirm</string>
+    <string name="title_activity_admin_panel">AdminPanel</string>
+    <string name="title_activity_admin_view_logged">AdminViewLogged</string>
+    <string name="title_activity_main_page">Main_page</string>
+
+</resources>

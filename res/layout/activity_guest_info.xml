@@ -1,0 +1,231 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".GuestInfo" >
+
+        
+        
+        
+        
+    <RelativeLayout
+        android:id="@+id/GuestFields"
+        android:layout_width="fill_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="50dp" >
+    
+    <RelativeLayout
+        android:id="@+id/GuestFieldsCol1"
+        android:layout_width="225dp"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/guest_addresslbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+	        android:layout_marginTop="42dp"
+            android:layout_below="@+id/guest_namelbl"
+            android:text="Visitor Address" 
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/guest_namelbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="Visitor Name"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/guest_artistlbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/guest_addresslbl"
+	        android:layout_marginTop="42dp"
+            android:text="Name of Artist"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/guest_purpose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/guest_artistlbl"
+            android:text="Purpose of Visit"
+	        android:layout_marginTop="42dp"
+            android:textSize="25sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/GuestFieldsCol2"
+        android:layout_width="225dp"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/GuestFieldsCol1" >
+
+        <EditText
+            android:id="@+id/guest_visNameField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:nextFocusDown="@+id/visAddressField" />
+
+        <EditText
+            android:id="@+id/guest_visAddressField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/guest_visNameField"
+            android:layout_marginTop="28dp"
+            android:ems="10"
+            android:inputType="text" 
+            android:nextFocusDown="@+id/guest_artNameField" />
+
+        <EditText
+            android:id="@+id/guest_artNameField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/guest_visAddressField"
+            android:layout_marginTop="34dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:nextFocusDown="@+id/guest_purposeField" />
+
+        <EditText
+            android:id="@+id/guest_purposeField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/guest_artNameField"
+            android:layout_marginTop="50dp"
+            android:ems="10"
+            android:inputType="text"
+            android:nextFocusDown="@+id/guest_phoneField" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/GuestFieldsCol3"
+        android:layout_width="225dp"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/GuestFieldsCol2" >
+
+        <TextView
+            android:id="@+id/guest_phonelbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="Phone"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/guest_snlbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/guest_emaillbl"
+	        android:layout_marginTop="42dp"
+            android:text="Artist Studio Number"
+            android:textSize="23sp" />
+
+        <TextView
+            android:id="@+id/guest_emaillbl"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/guest_phonelbl"
+            android:layout_marginTop="42dp"
+            android:text="E-mail"
+            android:textSize="25sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/GuestFieldsCol4"
+        android:layout_width="225dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/GuestFieldsCol3"
+        android:gravity="right" >
+
+        <EditText
+            android:id="@+id/guest_phoneField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:ems="10"
+            android:inputType="phone"
+            android:nextFocusDown="@+id/guest_emailField" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/guest_emailField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/guest_phoneField"
+            android:layout_marginTop="28dp"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:nextFocusDown="@+id/guest_SNField" />
+
+        <EditText
+            android:id="@+id/guest_SNField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/guest_emailField"
+            android:layout_marginTop="36dp"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            android:ems="10" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+    <Button
+        android:id="@+id/proceed"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/GuestFields"
+        android:layout_marginRight="223dp"
+        android:background="@drawable/custom_btn"
+        android:text="Next" />
+
+    <Button
+        android:id="@+id/backToMain"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/GuestFields"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="238dp"
+        android:background="@drawable/custom_btn"
+        android:text="Back" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Please enter your information"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>
